@@ -1,0 +1,4 @@
+src/backend/node_modules
+src/backend/assets/AppleDictionaryFiles/JSON/*
+src/backend/assets/AppleDictionaryFiles/XML/*
+.DS_Store
