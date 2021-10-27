@@ -9,6 +9,15 @@ Due to copyright issues, I cannot publish the macOS Dictionaries. You'll need to
 - This dictionary will now be accessible at [http://localhost:3000/dictionary/](http://localhost:3000/dictionary/)
 
 
+### User-made dictionaries
+You can add your own dictionaries in `backend/assets/UserDictionaryFiles`. They have to be JSON files with the following layout:
+```
+{
+     "word": "definition",
+     ...
+}
+```
+
 ### Acknowledgements:
 - Thanks to [@matthewreagan](https://github.com/matthewreagan) for [WebstersEnglishDictionary](https://github.com/matthewreagan/WebstersEnglishDictionary). A part of this is located at `assets/webster/dict.json` in this project.
 - Thanks to [@jadedtuna](https://github.com/jadedtuna) for [apple-dictionary](https://github.com/jadedtuna/apple-dictionary) This is located at `assets/apple-dict-parser` in this project.

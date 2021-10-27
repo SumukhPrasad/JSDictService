@@ -3,6 +3,7 @@ const app = express();
 const port = 3000;
 const webster = require("./modules/default.js");
 const apple = require("./modules/apple.js");
+const user = require("./modules/usermade.js");
 
 // sets default headers on all requests
 app.all("/*", function(req, res, next) {
@@ -18,6 +19,10 @@ app.get("/default/:word", (req, res) => {
 
 app.get("/apple/:dict/:word", (req, res) => {
 	res.send(apple.defineWord(req.params.dict, req.params.word));
+});
+
+app.get("/user/:dict/:word", (req, res) => {
+	res.send(user.defineWord(req.params.dict, req.params.word));
 });
 
 app.listen(port, () => {
