@@ -1,4 +1,0 @@
-/System/Library/AssetsV2/com_apple_MobileAsset_DictionaryServices_dictionaryOSX
-
-./dedict ../AppleDictionaryFiles/data/OXF.data | ./strip | ./checkxml.py > ../AppleDictionaryFiles/OXFdictionary.xml
-./dedict ../AppleDictionaryFiles/data/OXF-T.data | ./strip | ./checkxml.py > ../AppleDictionaryFiles/OXF-Tdictionary.xml
