@@ -6,7 +6,7 @@ Due to copyright issues, I cannot publish the macOS Dictionaries. You'll need to
 - Then, cppy then into `src/backend/assets/AppleDictionaryFiles/XML`.
 - Then, navigate to `src/backend/assets/apple-dict-parser` and execute `./dedict ../AppleDictionaryFiles/data/Body.data | ./strip | ./checkxml.py > ../AppleDictionaryFiles/dictionary.xml` 
 - Finally, navigate to `modules`. Edit line 3 to correspond to the name of the XML file with the dictionary data. The run `node appledictprepare.js`.
-- This dictionary will now be accessible at [http://localhost:3000/dictionary/](http://localhost:3000/dictionary/)
+- This dictionary will now be accessible at [http://localhost:3000/apple/:dict/:word](http://localhost:3000/apple/)
 
 
 ### User-made dictionaries
